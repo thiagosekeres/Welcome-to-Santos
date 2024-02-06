@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pontos Turísticos</title>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+	integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="home">
+        <div class="hero">
+			<nav class="navbar">
+				<div class="navbar-header">
+					<img src="assets/logo.png" alt="Welcome to Santos" class="navbar-header_logo">
+					<button type="button" class="navbar-header_toggle">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div> <!--navbar-header-->
+				<ul class="navbar-list">
+					<li>
+						<a href="https://www.welcometosantos.com.br/" class="navbar-list_link">Home</a>
+					</li>
+				</ul> <!--navbar-list-->
+				<ul class="navbar-icons">
+					<li>
+						<a href="https://www.welcometosantos.com.br/atendimento" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@welcome.to.santos?_t=8fgmzc5LZcT&_r=1" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-tiktok"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/welcometosantos/" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</nav> <!--navbar-->
+
+            <div class="hero_content">
+                <video src="assets/Santos 1.mp4" autoplay muted loop class="hero_video"></video>
+            </div>
+        </div> <!--hero (Vídeo)---->
+    </header> <!--home (Cabeçalho e Vídeo introdutório)-->
+
+	<section class="main-container"> <!--main-container (Estas são as divisões (div) que compõem o sistema de abas e o conteúdo associado abaixo de cada aba) -->
+
+		<img class="header-image-title" src="images/Explore Santos.png" alt="Mote">
+	
+		<img class="header-image" src="images/Mapa de Santos.png" alt="Mapa de Santos">
+	
+		<div class="tab-nav-bar"> <!--Barra de rolagem-->
+			<div class="tab-navigation">
+				<i class="uil uil-angle-left left-btn"></i>
+				<i class="uil uil-angle-right right-btn"></i>
+				<ul class="tab-menu">
+					<li class="tab-btn active">Ponta da Praia</li>
+					<li class="tab-btn">Boqueirão</li>
+					<li class="tab-btn">Gonzaga</li>
+					<li class="tab-btn">José Menino</li>
+					<li class="tab-btn">Macuco</li>
+					<li class="tab-btn">Vila Belmiro</li>
+					<li class="tab-btn">Monte Serrat</li>
+					<li class="tab-btn">Centro</li>
+					<li class="tab-btn">Valongo</li>
+					<li class="tab-btn">São Vicente</li>
+				</ul>
+			</div>
+		</div> <!--tab-nav-bar-->
+	
+		<div class="tab-content"> <!--Conteúdo abaixo da aba-->
+	
+		  	<!--Ponta da Praia-->
+		  	<div class="tab active">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Ponta da Praia.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Ponta da Praia</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Aquário Municipal de Santos</p>
+							<p>2.	Museu de Pesca</p>
+							<p>3.	Deck do Pescador</p>
+							<p>4.	Passeio de Escuna - Escuna Mestre dos Mares, Ponte Edgard Perdigão</p>
+							<p>5.	Balsa para o Guarujá</p>
+							<p>6.	Blue Med Convention Center (Centro de convenção de Santos)</p>
+							<p>7.	Mercado de Peixe</p>
+							<p>8.	Museu do Mar</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Aquário de Santos.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Aquário Municipal de Santos</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Praça Luiz La Scala, s/nº - Ponta da Praia, Santos - SP, 11030-600</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Domingo, das 9h às 18h. Bilheteria fecha às 17h30. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/aqu%C3%A1rio" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Aquário Municipal</span>, oferece uma experiência educativa e recreativa, destacando a biodiversidade marinha local. Com <span class="marcadores">exposições de espécies marinhas</span>, o aquário promove a conscientização ambiental e pode oferecer programas educativos para envolver o público na preservação dos ecossistemas aquáticos.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Museu da Pesca.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Museu de Pesca</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Avenida Bartolomeu de Gusmão, 192 - Ponta da Praia, Santos - SP, 11030-906</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Fechado temporariamente para reforma. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/museu-de-pesca" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Museu de Pesca</span>, com mais de meio século de encantamento, <span class="marcadores">exibe</span> uma coleção diversificada de <span class="marcadores">espécies marinhas taxidermizadas, conchas, corais, maquetes de embarcações e equipamentos de pesca</span>. Além de oferecer cursos, palestras e visitas monitoradas, o museu promove a conscientização sobre a preservação dos ecossistemas aquáticos e a pesca sustentável.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Deck do pescador.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">3.	Deck do Pescador</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Alm. Saldanha da Gama, s/n - Ponta da Praia, Santos - SP, 11030-401</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Sexta a domingo, das 7h às 18h. Segunda a Quinta, das 7h às 22h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/deck-do-pescador" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">deck do pescador</span>, além de oferecer uma vista deslumbrante da orla e ser um ponto turístico popular, conta com <span class="marcadores">infraestrutura que inclui banheiros e quiosque</span>. <span class="marcadores">Ideal para pesca recreativa</span>, passeios e contemplação, é uma atração emblemática que atende às necessidades dos visitantes e pescadores locais.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Escuna Mestre dos Mares.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">4.	Passeio de Escuna</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Em frente ao Clube Saldanha Gama - Ponte Edgard Perdigão, Av. Alm. Saldanha da Gama, s/n - Ponta da Praia, Santos - SP, 11030-400</p>
+							<p><span class="horario">Programação:</span> Consutar no <a class="site oficial" href="https://www.escunamestredosmares.com.br/home" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O Passeio com a <span class="marcadores">Escuna Mestre dos Mares</span> oferece uma experiência marítima inesquecível. <span class="marcadores">Navegando pelas águas serenas</span>, os passageiros desfrutam de vistas deslumbrantes, brisa marinha e atividades a bordo. Com tripulação experiente, a escuna proporciona um ambiente descontraído, <span class="marcadores">perfeito para relaxar e apreciar as belezas costeiras</span>.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Balsa para o guarujá.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">5.	Balsa para o Guarujá</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Praça Almirante Gago Coutinho, 525 - Ponta da Praia, Santos - SP, 11030-200</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Consutar no <a class="site oficial" href="https://semil.sp.gov.br/dh/travessias/travessias-automoveis/santos-guaruja/" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> Todas as embarcações cumprem um cronograma de manutenção preventiva e se <span class="marcadores">encontram em perfeitas condições de funcionamento</span>, aprovadas e certificadas para operarem. <span class="marcadores">As balsas são gratuitas para ciclistas</span>. Idosos e pessoas com deficiência têm embarque prioritário.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Centro de exposição.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">6.	Centro de convenção</h2>
+						</div>
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Pr. Almirante Gago Coutinho, 29 - Ponta da Praia, Santos - SP, 11030-200</p>
+							<p><span class="horario">Programação:</span> Consutar no <a class="site oficial" href="https://bluemedconventioncenter.com.br/" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> 
+							O <span class="marcadores">Centro de Convenções</span> de Santos destaca-se como um espaço moderno e versátil para eventos. Com instalações de ponta e design arrojado, o local proporciona o <span class="marcadores">ambiente ideal para conferências, exposições e reuniões</span>. Sua localização privilegiada na cidade costeira complementa a experiência, oferecendo aos participantes uma atmosfera inspiradora à beira-mar.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Mercado do peixe.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">7.	Mercado de Peixe</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Gov. Mário Covas Júnior, 3050 - Ponta da Praia, Santos - SP, 11030-200</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Sábado, das 7h às 18h. Domingo, das 7h ás 15h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/mercado-de-peixes" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Mercado do Peixe</span> na Ponta da Praia <span class="marcadores">oferece uma incrível variedade de peixes frescos</span>. <span class="marcadores">No segundo andar, um restaurante encanta</span> os visitantes <span class="marcadores">com</span> a frescura dos frutos do mar e <span class="marcadores">pratos</span> regionais <span class="marcadores">irresistíveis</span>. Os clientes vivenciam uma experiência culinária singular, imersos na autêntica essência da cozinha local, enquanto desfrutam de uma vista encantadora do Mercado.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Museu do mar.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">8.	Museu do Mar</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> R. República do Equador, 81 - Ponta da Praia, Santos - SP, 11030-151</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Domingo, das 13h30 às 18h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/museu-do-mar-e-mar%C3%ADtimo" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Museu do Mar</span> em Santos é um <span class="marcadores">mergulho na rica história marítima da cidade. Exibindo naufrágios</span>, instrumentos de navegação e relíquias marítimas, o museu cativa os visitantes com sua coleção fascinante. Uma jornada educativa que revela as conexões profundas entre Santos e o oceano, enriquecendo a compreensão local.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+
+		  	</div> <!--tab active-->
+	
+		  	<!--Boqueirão-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/BOQUEIRÃO.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Boqueirão</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Pinacoteca Benedito Calixto: "O Histórico Casarão Branco", tombada pelo Conselho Municipal</p>
+						</div>
+					</div>
+				</div>
+	
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Pinacoteca Benedicto Calixto.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Pinacoteca Benedito Calixto</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Bartholomeu de Gusmão, 15 - Boqueirão, Santos - SP, 11045-400</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Domingo, das 9h30 às 18h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/pinacoteca-benedicto-calixto" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Pinacoteca</span> Benedito Calixto é uma instituição cultural que <span class="marcadores">abriga uma rica coleção de obras de arte</span>, especialmente pinturas <span class="marcadores">do renomado artista brasileiro Benedito Calixto</span>. Localizada em um edifício histórico, a pinacoteca oferece aos visitantes uma experiência enriquecedora, destacando a contribuição significativa da arte para a identidade cultural local.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+		  	<!--Gonzaga-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Gonzaga.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Gonzaga</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Praça das Bandeiras: Homenagem aos feitos de Santos durante a Revolução Constitucionalista de 1932</p>
+							<p>2.	Praça da Independência: Inaugurada em 7 de setembro de 1922</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Praça das bandeiras.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Praça das Bandeiras</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Vicente de Carvalho, S/N - Gonzaga, Santos - SP, 11045-501</p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Praça das Bandeiras</span>, localizada no charmoso bairro Gonzaga, é um ponto de encontro vibrante. <span class="marcadores">Rodeada por comércios e restaurantes</span>, a praça oferece um ambiente acolhedor para moradores e visitantes. Seu paisagismo encantador, bancos convidativos e a presença das bandeiras estaduais criam uma atmosfera única de convívio.</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Praça da Independência.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Praça da Independência</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Ana Costa - Gonzaga, Santos - SP, 11060-010</p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Praça da Independência</span>, no coração do bairro Gonzaga, é um <span class="marcadores">refúgio tranquilo. Rodeada por árvores e bancos</span>, oferece um espaço convidativo para descanso e contemplação. Com sua atmosfera serena, a praça é um oásis urbano apreciado por moradores e visitantes em busca de paz.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+	
+		  	<!--José Menino-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/José menino.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">José Menino</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Quebra-Mar: Parque Roberto Mário Santini e escultura de Tomie Ohtake</p>
+							<p>2.	Orquidário Municipal de Santos: Inaugurado em 1945</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Quebra mar.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Quebra Mar</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Pres. Wilson, S/N - José Menino, Santos - SP, 11065-201</p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Quebra-Mar</span>, em José Menino, é uma paisagem paradisíaca que harmoniza o oceano com a terra. O Parque Roberto Mário Santini oferece vistas deslumbrantes do mar, proporcionando um refúgio relaxante com ciclovias e áreas verdes, tornando-se um <span class="marcadores">destino</span> encantador <span class="marcadores">para lazer e contemplação à beira-mar</span>.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Orquidário.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Orquidário Municipal de Santos</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Praça Washington, s/n - José Menino, Santos - SP, 11065-600</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Domingo, das 9h às 18h. Bilheteria fecha às 17h30. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/orquid%C3%A1rio" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Orquidário</span> Municipal de Santos, situado no bairro José Menino, <span class="marcadores">é um tesouro botânico</span>. Com uma <span class="marcadores">coleção deslumbrante de orquídeas e outras espécies exóticas</span>, o jardim oferece um refúgio sereno para amantes da natureza. Seus viveiros coloridos e trilhas encantadoras convidam à contemplação, tornando-o um destino único na cidade.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+		   	<!--Macuco-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Macuco.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Macuco</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Museu do Porto de Santos: Inaugurado em 1º de setembro de 1989, que narra a rica história marítima da região</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Museu do porto de santos.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Museu do Porto de Santos</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Conselheiro Rodrigues Alves - Macuco, Santos - SP, 11015-230</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Sábado, das 9h às 17h. Visita guiada a cada 30 minutos. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/museu-do-porto" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Museu do Porto</span> de Santos destaca a rica história marítima da cidade. Localizado em um antigo armazém portuário, <span class="marcadores">exibe artefatos, fotografias e modelos de navios</span>, proporcionando uma viagem no tempo pela evolução do porto. Uma experiência imersiva que revela o papel vital desempenhado pelo porto na construção da identidade de Santos.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+		   <!--Vila Belmniro-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Vila Belmiro.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Vila Belmiro</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Cemitério Memorial Necrópole Ecumênica: Mausoléu do Rei Pelé</p>
+							<p>2.	Estádio do Santos - Vila Belmiro: O templo sagrado do futebol mundial</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Mausoléu do Pelé.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Cemitério Memorial Necrópole Ecumênica</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Dr. Nilo Peçanha, 50 - Marapé, Santos - SP, 11070-908</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Domingo, das 8h às 19h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/memorial-necr%C3%B3pole-ecum%C3%AAnica" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Necrópole Ecumênica</span>, na Vila Belmiro, <span class="marcadores">é o eterno lar de Pelé, o Rei do Futebol</span>. Este cemitério singular reverencia a grandiosidade do ícone esportivo. Um espaço sagrado onde admiradores se reúnem para honrar o legado imortal do <span class="marcadores">maior jogador da história</span>, marcando sua contribuição indelével ao futebol mundial.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Estádio - Vila Belmiro.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Estádio do Santos - Vila Belmiro</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Rua Princesa Isabel, S/N, Vila Belmiro, Santos - SP, 11075-501</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Sexta, das 9h às 17h. <a class="site oficial" href="https://www.santosfc.com.br/vila-belmiro/" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Vila Belmiro</span>, <span class="marcadores">templo sagrado do futebol mundial</span>, é o icônico estádio do Santos FC. <span class="marcadores">Com mais de um século de história</span>, suas arquibancadas ecoam os feitos lendários do clube. Palco de conquistas inesquecíveis, a Vila personifica a paixão e glória que permeiam a trajetória vitoriosa do Peixe.</p>
+						</div>
+					</div>
+				</div>
+	
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+		   <!--Monte Serrat-->
+		  <div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Monte Serrat.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Monte Serrat</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Bonde do Monte Serrat: Santuário de Nossa Senhora do Monte Serrat e o antigo Cassino</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Bonde Monte Serrat.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Bonde do Monte Serrat</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Praça Correia de Mello nº 33, Centro Histórico</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Domingo, das 8h às 20h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/monte-serrat" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Monte Serrat </span> em Santos, majestosa elevação, <span class="marcadores">oferece vistas panorâmicas deslumbrantes da cidade e do mar</span>. O <span class="marcadores">acesso por um centenário funicular</span> aumenta a experiência. Seu histórico mirante proporciona uma atmosfera única para contemplar o cenário encantador, tornando-se um ponto imperdível para residentes e visitantes explorarem a beleza da região.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+	
+		   	<!--Centro-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Centro.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Centro</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Praça Patriarca José Bonifácio</p>
+							<p>2.	Museu do Café: Cafeteria e Centro de Preparação de Café com curso de Barista</p>
+							<p>3.	Museu Pelé: Instalado nos antigos Casarões do bairro Valongo</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Praça Patriarca José Bonifácio.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Praça Patriarca José Bonifácio</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Praça Patriarca José Bonifácio, S/N - Centro, Santos - SP, 11013-190</p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Praça Patriarca José Bonifácio</span>, é um charmoso espaço urbano que <span class="marcadores">homenageia um dos patriarcas da independência do Brasil</span>. <span class="marcadores">Rodeada por árvores e bancos</span>, a praça convida moradores e visitantes a desfrutarem de momentos de lazer e contemplação, destacando-se como ponto emblemático na cidade litorânea.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Museu do Café.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Museu do Café</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span>  R. Quinze de Novembro, 95 - Centro, Santos - SP, 11010-150</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Sábado, das 9h às 17h. Domingo, das 10h ás 17h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/museu-do-caf%C3%A9" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Museu do Café</span> em Santos é um tesouro cultural que narra a história fascinante do café no Brasil. <span class="marcadores">Instalado em um antigo edifício portuário, o museu oferece exposições interativas e detalhes sobre o ciclo cafeeiro</span>, proporcionando uma imersão única na rica herança cultural e econômica dessa preciosa bebida.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Museu do Pelé.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">3.	Museu Pelé</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Largo Marquês de Monte Alegre, 1 - Valongo, Santos - SP, 11010-260</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Sábado, das 10h às 17h30. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/museupele" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Museu Pelé</span> em Santos, <span class="marcadores">instalado nos antigos Casarões do Valongo</span>, é um tributo ao Rei do Futebol, Edson Arantes do Nascimento. Destacando a rica trajetória de Pelé, <span class="marcadores">o museu exibe troféus, fotos e objetos pessoais</span>, oferecendo uma imersão única na história e legado do futebol brasileiro.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+		   	<!--Valongo-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Valongo.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Valongo</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Linha Turística do Bonde: Bondes originais procedentes da Escócia, Portugal, Itália e Japão</p>
+							<p>2.	Museu de Arte Sacra: Localizado no complexo beneditino, com a Igreja de Nossa Senhora do Desterro e o antigo Mosteiro de São Bento.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Linha turistica do bonde.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Linha Turística do Bonde</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Largo Marquês de Monte Alegre, 2 - Valongo, Santos - SP, 11010-060</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Sexta, das 11h às 17h. Sábado, das 10h30 ás 17h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/bonde" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> A Linha Turística do <span class="marcadores">Bonde</span> oferece uma viagem encantadora pela história da cidade. Percorrendo charmosas ruas do centro, <span class="marcadores">o bonde resgata a atmosfera nostálgica dos anos dourados</span>. Com guias entusiasmados, os passageiros exploram a arquitetura preservada e aprendem sobre o passado portuário e cultural de Santos. Uma experiência única.</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Museu de Arte Sacra.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Museu de Arte Sacra</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Rua Santa Joana D’Arc, 795 (sopé do Morro São Bento), acesso ao estacionamento pela Rua Visconde do Embaré, Santos - SP</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Terça a Sábado, das 10h às 16:30h. Domingo, das 13h ás 16h30. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/museu-de-arte-sacra" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Museu de Arte Sacra</span> <span class="marcadores">preserva a rica herança religiosa da região</span>, exibindo uma coleção diversificada de obras sacras. Localizado em um edifício histórico, o museu oferece aos visitantes uma jornada única através de esculturas, <span class="marcadores">pinturas e objetos litúrgicos</span>, proporcionando uma conexão fascinante com a história cultural local.</p>
+						</div>
+					</div>
+				</div>
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+	
+		   	<!--São Vicente-->
+		  	<div class="tab">
+
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/São Vicente.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">São Vicente</h2>
+						</div>	
+						<div class="description">
+							<p>1.	Teleférico de São Vicente: Altitude no topo, ao nível do mar, é de 170 metros</p>
+							<p>2.	Morro da Asa Delta (Morro de Itararé): Ponto máximo a 180 metros de altura</p>
+							<p>3.	Memorial dos 500 Anos (Mirante Niemeyer)</p>
+							<p>4.	Ilha Porchat</p>
+							<p>5.	Jardim Botânico: Espaço verde com 90 mil m²</p>
+							<p>6.	Biquinha: Construída em 1553</p>
+							<p>7.	Ponte Pênsil: Construída em 1914</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Teleférico de São Vicente.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">1.	Teleférico de São Vicente</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Av. Ayrton Senna da Silva, 500 - Itararé, São Vicente - SP, 11321-000</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Sexta, das 10h às 16h. Finais de Semana e Feriados, das 10h às 16h. <a class="site oficial" href="https://www.telefericosaovicente.com.br/" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Teleférico</span> de São Vicente oferece uma <span class="marcadores">vista deslumbrante da cidade e do mar</span>, proporcionando uma experiência única aos visitantes. Com uma <span class="marcadores">altitude de 170 metros</span>, a jornada panorâmica oferece momentos memoráveis, destacando a beleza costeira de São Vicente e suas paisagens envolventes.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Morro da Asa Delta.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">2.	Morro da Asa Delta (Morro de Itararé)</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Morro Voturuá - Itararé, São Vicente - SP</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a Sexta, das 10h às 16h. Finais de Semana e Feriados, das 10h às 16h. <a class="site oficial" href="https://www.saovicente.sp.gov.br/morro-da-asa-delta" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Morro da Asa Delta</span>, em Itararé, oferece aos aventureiros uma emocionante experiência a <span class="marcadores">180 metros de altura</span>. Conhecido por suas <span class="marcadores">condições ideais para voos livres, o local também abriga um restaurante</span>, permitindo que os visitantes desfrutem não apenas da adrenalina dos esportes radicais, mas também de deliciosas refeições com vistas deslumbrantes.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Memorial dos 500 Anos.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">3.	Memorial dos 500 Anos (Mirante Niemeyer)</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Alameda Ari Barroso - Ilha Porchat, São Vicente - SP, 11320-400</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Aberto todos os dias, 24 horas por dia. <a class="site oficial" href="https://www.saovicente.sp.gov.br/memorial-dos-500-anos" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Memorial dos 500 Anos, Mirante Niemeyer</span>, em São Vicente, celebra a rica história da cidade. Com <span class="marcadores">vistas panorâmicas espetaculares</span>, oferece uma jornada visual através dos séculos. Este ponto turístico marcante <span class="marcadores">homenageia os 500 anos do Brasil </span>, proporcionando uma experiência cultural única, enraizada na beleza da baía e da região.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Ilha Porchat.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">4.	Ilha Porchat</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Ilha Porchat, São Vicente - SP <a class="site oficial" href="https://www.saovicente.sp.gov.br/ilha-porchat" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> <span class="marcadores">Ilha Porchat</span>, em São Vicente, é um refúgio costeiro encantador. Com <span class="marcadores">paisagens deslumbrantes e trilhas pitorescas</span>, cativa visitantes em busca de serenidade. Seus mirantes oferecem vistas magníficas do oceano. O <span class="marcadores">restaurante Terraço</span>, no local, complementa a experiência, proporcionando deliciosas refeições com uma <span class="marcadores">vista espetacular para o mar</span>.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Jardim Botanico.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">5.	Jardim Botânico</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> R. João Fraccaroli, s/n - Bom Retiro, Santos - SP, 11089-230</p>
+							<p><span class="horario">Horário de Funcionamento:</span> Segunda a sexta, das 07h às 19h. Sábados e domingos, das 07h às 18h. <a class="site oficial" href="https://www.turismosantos.com.br/?q=pt-br/content/jardim-bot%C3%A2nico-chico-mendes" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> O <span class="marcadores">Jardim Botânico</span> é um oásis verdejante que cativa com sua diversidade botânica. Visitantes exploram trilhas sombreadas, descobrindo uma <span class="marcadores">vasta coleção de plantas exóticas e locais</span>. O ambiente tranquilo e educativo torna este espaço um refúgio urbano, ideal para apreciar a natureza e promover a conscientização ambiental.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Biquinha.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">6.	Biquinha</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Praça 22 de Janeiro - Centro, São Vicente - SP, 11310-090</p> 
+							<p><span class="horario">Horário de Funcionamento:</span> Aberto todos os dias, 24 horas por dia. <a class="site oficial" href="https://www.saovicente.sp.gov.br/praca-da-biquinha-de-anchieta" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Biquinha</span>, em São Vicente, é uma <span class="marcadores">fonte histórica e cenário pitoresco, construída em 1553</span> e tombada pelo Conselho Municipal. Rodeada por jardins bem cuidados, <span class="marcadores">este local é famoso pela "Feira dos Doces"</span>. Com águas cristalinas, a Biquinha é um marco que reflete a rica herança da cidade, convidando à contemplação serena.</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="images/Ponte Pensil.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">7.	Ponte Pênsil</h2>
+						</div>	
+						<div class="description">
+							<p><span class="endereco">Endereço:</span> Pte. Pênsil, 257 - Japuí, São Vicente - SP, 11325-010 <a class="site oficial" href="https://www.saovicente.sp.gov.br/ponte-pensil" target="_blank">Site oficial</a></p>
+							<p><span class="descricao">Descrição:</span> A <span class="marcadores">Ponte Pênsil</span> em São Vicente, <span class="marcadores">construída em 1914</span>, é um marco histórico que se estende por 325 metros, <span class="marcadores">ligando a ilha à Praia Grande</span>. Além de sua importância arquitetônica, a ponte oferece vistas deslumbrantes da Baía de Santos, proporcionando uma experiência única aos visitantes que a atravessam.</p>
+						</div>
+					</div>
+				</div>
+	
+	
+				<h1 class="country">Explore</h1>
+		  	</div> <!--tab-->
+		
+		</div> <!--tab-content-->
+	
+	
+	</section> <!--main-container (Estas são as divisões (div) que compõem o sistema de abas e o conteúdo associado abaixo de cada aba) -->
+
+
+	<section class="galeria" id="galeria"> <!--galeria (Galeria de fotos)-->
+		<article class="galeria-item">
+			<img src="assets/photo_0.png" alt="Welcome to Santos" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Welcome to Santos</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_1.png" alt="Aquário Municipal de Santos" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Aquário de Santos</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_2.png" alt="Museu Pelé" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Museu Pelé</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_3.png" alt="Ciclovia da Orla" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Ciclovia da Orla</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_4.png" alt="Bonde do Monte Serrat" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Bonde do Monte Serrat</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_5.png" alt="Mirante Niemeyer" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Mirante Niemeyer</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_6.png" alt="Estádio do Santos" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Estádio do Santos</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_7.png" alt="Mercado de Peixe" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Mercado de Peixe</h4>
+		</article>		
+	</section> <!--galeria (Galeria de fotos)-->
+
+	<footer class="footer"> <!--footer (Rodapé da página)-->
+		<ul class="footer-list">
+
+			<li class="footer-list_item">
+				<a href="#home" class="footer-list_link">Início</a>
+			</li>
+
+		</ul> <!--footer-list-->
+
+		<ul class="footer-icons">
+			<li>
+				<a href="https://www.welcometosantos.com.br/atendimento" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-whatsapp"></i>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.tiktok.com/@welcome.to.santos?_t=8fgmzc5LZcT&_r=1" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-tiktok"></i>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/welcometosantos/" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+
+		</ul> <!--footer-icons-->
+
+		<p class="copyright">Copyright &copy; Welcome to Santos <span class="date"></span> Todos os direitos reservados.</p>
+
+	</footer>  <!--footer (Rodapé da página)-->
+
+	<div class="modal"> <!--modal (O modal serve para expandir a fotos na tela)-->
+		<div class="modal_close"><i class="fas fa-times"></i></div>
+
+		<div class="modal_content">
+			<div class="slider">
+				<div class="slider_image">
+					<div class="slider-image_number">1 / 6</div>
+					<img src="assets/photo_0.png" class="slider-image_img">
+				</div> <!--slider-image-->
+				<div class="slider-buttons">
+					<div class="slider-buttons_btn-prev">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<div class="slider-buttons_btn-next">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>	<!--slider-button-->
+			</div> <!--slider-->
+			<p class="slider-image-description">Teste de Caption</p>
+			<div class="slider-thumbs">
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_0.png" alt="Welcome to Santos">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_1.png" alt="Aquário Municipal de Santos">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_2.png" alt="Museu Pelé">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_3.png" alt="Ciclovia da Orla">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_4.png" alt="Bonde do Monte Serrat">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_5.png" alt="Mirante Niemeyer">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_6.png" alt="Estádio do Santos">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_7.png" alt="Mercado de Peixe">
+				</div>
+			</div>
+		</div> <!--modal_content-->
+	</div> <!--modal--> <!--modal (O modal serve para expandir a fotos na tela)-->
+	<script src="js/scripts.js"></script>
+</body>
+</html>

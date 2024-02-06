@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arquitetura</title>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+	integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="home">
+        <div class="hero">
+			<nav class="navbar">
+				<div class="navbar-header">
+					<img src="assets/logo.png" alt="Welcome to Santos" class="navbar-header_logo">
+					<button type="button" class="navbar-header_toggle">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div> <!--navbar-header-->
+				<ul class="navbar-list">
+					<li>
+						<a href="https://www.welcometosantos.com.br/" class="navbar-list_link">Home</a>
+					</li>
+				</ul> <!--navbar-list-->
+				<ul class="navbar-icons">
+					<li>
+						<a href="https://www.welcometosantos.com.br/atendimento" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@welcome.to.santos?_t=8fgmzc5LZcT&_r=1" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-tiktok"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/welcometosantos/" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</nav> <!--navbar-->
+
+            <div class="hero_content">
+                <video src="assets/Santos 1.mp4" autoplay muted loop class="hero_video"></video>
+            </div>
+        </div> <!--hero (Vídeo)---->
+    </header> <!--home (Cabeçalho e Vídeo introdutório)-->
+
+	<section class="main-container"> <!--main-container (Estas são as divisões (div) que compõem o sistema de abas e o conteúdo associado abaixo de cada aba) -->
+		<img class="header-image-title" src="images/Sugestões.png" alt="Mote">
+	
+
+		<div class="tab active">
+
+			<div class="row">
+			  	<div class="left-column">
+					<div class="img-card">
+				  		<img src="images/Arquitetura.png" alt="">
+					</div>
+			  	</div>
+			  	<div class="right-column">
+					<div class="info">
+				  		<h2 class="city">Um Mosaico Arquitetônico</h2>
+					</div>	
+				  	<div class="description">
+						<p>A cidade de <span class="marcadores">Santos destaca-se pela</span> diversidade e vanguarda de sua arquitetura, refletindo as influências culturais de imigrantes que chegaram através do porto. Desde <span class="marcadores">construções barrocas do século XVI</span> até a <span class="marcadores">arquitetura contemporânea do século XXI</span>, a arquitetura santista é um testemunho da rica história da cidade. <span class="marcadores">Cada estilo arquitetônico, dos chalés madeirenses à imponência do Edifício Unlimited Ocean Front</span>, contribui para a identidade visual única de Santos. Essa mescla eclética de estilos não apenas enriquece a paisagem urbana, mas também conta a história multifacetada da cidade ao longo dos séculos.</p>
+				  	</div>
+				</div>
+			</div>
+	
+			<div class="row">
+			  	<div class="left-column">
+					<div class="img-card">
+				 		<img src="images/Barroco.png" alt="">
+					</div>
+			  	</div>
+			  	<div class="right-column">
+					<div class="info">
+				  		<h2 class="city">Barroco</h2>
+					</div>	
+				  	<div class="description">
+						<p>A arquitetura santista, um mosaico ao céu aberto, destaca-se pelo <span class="marcadores">Barroco</span>. A <span class="marcadores">Ordem Terceira de Nossa Senhora do Carmo e a Igreja Santo Antônio do Valongo, do século XVI</span>, exemplificam esse esplendor. Detalhes ornamentados, curvas sofisticadas e elementos sacros conferem uma elegância única. Essas construções não apenas testemunham o passado, mas também cativam com a riqueza cultural e a devoção que permeiam suas paredes. Santos Barroco é mais que arquitetura; é uma jornada visual pelas eras, preservando a magnificência de uma época em cada detalhe intricado.</p>
+				  	</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Chalés em madeira.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Chalés Madeirenses</h2>
+					</div>	
+					<div class="description">
+					  	<p>Os Chalés Madeirenses, <span class="marcadores">herança dos imigrantes da Ilha da Madeira</span>, adornam as encostas dos morros, especialmente <span class="marcadores">nos bairros de Ponta da Praia, Embaré, Macuco e Estuário</span>. Essas moradias ainda presentes são mais do que simples construções; são testemunhas vivas da influência cultural que os madeirenses <span class="marcadores">trouxeram consigo por volta de 1885</span>. Os Chalés, com seu madeiramento sobre pedras fixas e terraços, não só compõem a paisagem urbana de Santos, mas também contam a história de uma comunidade que moldou a identidade arquitetônica da cidade.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Belas Artes.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Estilo Belas-artes</h2>
+					</div>	
+					<div class="description">
+					  	<p>A arquitetura santista é enriquecida pelas esplêndidas obras de <span class="marcadores">Belas Artes</span>, notadamente o <span class="marcadores">Prédio dos Correios e Telégrafos (1924) e a imponente Bolsa Oficial de Café </span>, agora casa do Museu do Café. O Prédio dos Correios destaca-se pela grandiosidade de seu design, enquanto a Bolsa Oficial de Café, com seu pórtico ornamentado e colunas dóricas, é um testemunho da opulência associada ao comércio de café. Ambas não apenas são marcos arquitetônicos, mas também preservam a rica história econômica e cultural de Santos, convidando visitantes a explorar sua grandiosidade.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Estilo Luís XV.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Elegância dos Estilo Luís XV</h2>
+					</div>	
+					<div class="description">
+						<p>O <span class="marcadores">Estilo Luís XV</span> <span class="marcadores">revela-se na grandiosidade do Palácio José Bonifácio (1927)</span>, uma construção repleta de simbolismos <span class="marcadores">relacionados à maçonaria</span> e personagens históricos como José Bonifácio. Para além de sua arquitetura refinada, o palácio é um tesouro de significados, <span class="marcadores">com estátuas de Hermes e Minerva na entrada</span>, representando comércio, indústria e sabedoria. A presença de elementos maçônicos sugere uma ligação profunda com figuras que moldaram a história, como Bonifácio e Dom Pedro I. Este edifício não é apenas uma expressão de estilo, mas uma porta de entrada para a compreensão das influências culturais e históricas que moldaram Santos.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Modernismo orgânico.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Modernismo Orgânico</h2>
+					</div>	
+					<div class="description">
+						<p>O <span class="marcadores">Modernismo Orgânico</span> atinge sua <span class="marcadores">expressão máxima no Edifício Verde Mar (1957)</span>, uma obra que personifica esse estilo. Projetado para a exigente burguesia paulistana, o edifício destaca-se por sua decoração orgânica, uma fusão equilibrada de formas e elementos naturais. Com 168 apartamentos distribuídos em 14 andares, o edifício não apenas reflete a sofisticação da época, mas também oferece um retiro luxuoso à beira-mar. O Edifício Verde Mar não é apenas uma estrutura arquitetônica, mas uma representação viva do Modernismo Orgânico, incorporando a harmonia entre o homem e a natureza em cada detalhe.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Arquiterura Contemporânea.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Arquitetura Contemporânea</h2>
+					</div>	
+					<div class="description">
+						<p>Na vanguarda da arquitetura contemporânea, o <span class="marcadores">Edifício Unlimited Ocean Front desponta como um ícone em Santos</span>. O edifício destaca-se pela ousadia arquitetônica com o seu <span class="marcadores">formato irregular</span>, conferindo-lhe uma identidade única. Janelas de grandes dimensões são estrategicamente integradas para capturar luz natural abundante, proporcionando ambientes mais iluminados e arejados. A interligação fluida entre os espaços reforça a abordagem contemporânea, enquanto estruturas e acabamentos feitos com materiais industrializados adicionam uma estética moderna e sustentável. <span class="marcadores">O Unlimited Ocean Front</span> não apenas <span class="marcadores">representa o presente</span>, mas <span class="marcadores">também </span> molda a narrativa visual do <span class="marcadores">futuro</span> arquitetônico de Santos.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Outros Estilos.jpg" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Outros Estilos</h2>
+					</div>	
+					<div class="description">
+						<p>Concluindo o guia arquitetônico, <span class="marcadores">Santos exibe</span> uma rica tapeçaria histórica por meio de <span class="marcadores">diversos estilos</span>, desde o encantamento <span class="marcadores">Art Nouveau na Pinacoteca Benedito Calixto (1900)</span> até a imponência <span class="marcadores">Neomanuelina do Real Centro Português (1901)</span>. A elegância <span class="marcadores">Neocolonial do Colégio Escolástica Rosa (1908)</span>, a sofisticação <span class="marcadores">Art Déco na Sociedade Humanitária dos Empregados do Comércio (1931)</span>, o <span class="marcadores">estilo Eclético no Teatro Guarani (1882)</span>, o <span class="marcadores">Neogótico da Casa Acastelada Construção (1886)</span>, e a exuberância <span class="marcadores">Neoclássica da Casa da Frontaria Azulejada (1865)</span> formam um panorama cativante. Acrescentando a essa diversidade, encontramos o <span class="marcadores">Modernismo orgânico</span> representado pelo <span class="marcadores">Edifício Verde Mar (1957)</span>. Esta variedade arquitetônica convida a uma envolvente viagem no tempo, proporcionando uma experiência visual única que reflete a pluralidade cultural e histórica da encantadora cidade de Santos.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<h1 class="country">Explore</h1>
+		
+		</div> <!--tab active-->
+	
+	
+	</section> <!--main-container (Estas são as divisões (div) que compõem o sistema de abas e o conteúdo associado abaixo de cada aba) -->
+
+
+	<section class="galeria" id="galeria"> <!--galeria (Galeria de fotos)-->
+		<article class="galeria-item">
+			<img src="assets/photo_0.png" alt="Art Nouveau - Pinacoteca Benedito Calixto (de 1900)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Art Nouveau</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_1.png" alt="Estilo Neomanuelino - Real Centro Português (de 1901)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Estilo Neomanuelino</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_2.png" alt="Estilo Neocolonial - Colégio Escolástica Rosa (de 1908)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Estilo Neocolonial</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_3.png" alt="Art Déco - Sociedade Humanitária dos Empregados do Comércio (de 1931)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Art Déco</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_4.png" alt="Estilo Eclético - Teatro Guarani (de 1882)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Estilo Eclético</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_5.png" alt="Estilo Neogótico - Casa Acastelada Construção (de 1886)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Estilo Neogótico</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_6.png" alt="Estilo Neoclássico - Casa da Frontaria Azulejada (de 1865)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Estilo Neoclássico</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_7.png" alt="Modernismo orgânico - Edifício Verde Mar (1957)" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Modernismo orgânico</h4>
+		</article>		
+	</section> <!--galeria (Galeria de fotos)-->
+
+	<footer class="footer"> <!--footer (Rodapé da página)-->
+		<ul class="footer-list">
+
+			<li class="footer-list_item">
+				<a href="#home" class="footer-list_link">Início</a>
+			</li>
+
+		</ul> <!--footer-list-->
+
+		<ul class="footer-icons">
+			<li>
+				<a href="https://www.welcometosantos.com.br/atendimento" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-whatsapp"></i>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.tiktok.com/@welcome.to.santos?_t=8fgmzc5LZcT&_r=1" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-tiktok"></i>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/welcometosantos/" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+
+		</ul> <!--footer-icons-->
+
+		<p class="copyright">Copyright &copy; Welcome to Santos <span class="date"></span> Todos os direitos reservados.</p>
+
+	</footer>  <!--footer (Rodapé da página)-->
+
+	<div class="modal"> <!--modal (O modal serve para expandir a fotos na tela)-->
+		<div class="modal_close"><i class="fas fa-times"></i></div>
+
+		<div class="modal_content">
+			<div class="slider">
+				<div class="slider_image">
+					<div class="slider-image_number">1 / 6</div>
+					<img src="assets/photo_0.png" class="slider-image_img">
+				</div> <!--slider-image-->
+				<div class="slider-buttons">
+					<div class="slider-buttons_btn-prev">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<div class="slider-buttons_btn-next">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>	<!--slider-button-->
+			</div> <!--slider-->
+			<p class="slider-image-description">Teste de Caption</p>
+			<div class="slider-thumbs">
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_0.png" alt="Unlimited Ocean Front">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_1.png" alt="Piscina de Borda Infinita">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_2.png" alt="Pão de Açucar">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_3.png" alt="Hall Principal da Entrada">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_4.png" alt="Piscina Aquecida Semiolímpica">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_5.png" alt="Piscina Aquecida Infantil">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_6.png" alt="Espaço de Interação e Compartilhamento">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_7.png" alt="Playground">
+				</div>
+			</div>
+		</div> <!--modal_content-->
+	</div> <!--modal--> <!--modal (O modal serve para expandir a fotos na tela)-->
+	<script src="js/scripts.js"></script>
+</body>
+</html>

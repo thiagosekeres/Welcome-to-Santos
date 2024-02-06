@@ -1,0 +1,717 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+/*Esse código faz aparecer no cabeçario os ícones da home, do WhatsApp, do TikTok e do Instagram.*/
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Estilos Gerais 
+/* 2. Navbar - <!--Contempla o logo, o ícone home, e os ícones WhatsApp, tiktok, e instagram (Cabeçalho)-->
+/* 3. Hero <!--hero (Vídeo)----> Está dentro do header 
+/* 4. Main Container <!--header-image-title (mote); row; country-name)-->
+/* 5. Media queris (max-width: 1050px) - Codigos Responsivo <!--main-container (header-image-title; row; country-name)-->
+/* 6. Galeria
+/* 7. Footer
+/* 8. Modal
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+	--first-color:  #2e2e41;
+	--second-color: #5b85ff;
+	--third-color:  #434354;
+	--text-color:   #fff;
+
+	--box-shadow: 0 5px 25px rgb(2, 2, 2, 0.1);
+	--text-shadow: 0 5px 25px rgb(2, 2, 2, 0.1);
+  
+  
+	--clr-background: 	#F5F5F5;
+	--clr-white: 		#F1FCDE;
+	--clr-black: 		#090E01;
+	--clr-light-green: 	#bbdefb;
+	--clr-medium-green: #2196f3;
+	--clr-dark-green: 	#0d47a1;
+	--clr-blue:         #030bfc;
+
+	--ff-primary: "Cairo", sans-serif;
+
+	--spacing: 0.25rem;
+	--transition: all 0.2s linear;
+	--dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.marcadores {
+	color: var(--clr-dark-green);
+	font-weight: bold; /* Substitua "red" pela cor desejada */
+}
+  
+.vendas {
+	color: blue; /* Substitua "blue" pela cor desejada */
+}
+  
+.propaganda {
+	color: blue;
+}
+
+.endereco {
+	color: blue;
+}
+
+.horario {
+	color: blue;
+}
+
+.data {
+	color: blue;
+}
+
+.local {
+	color: blue;
+}
+
+/**********************************/
+/* 1. Estilos Gerais 
+/**********************************/
+
+html {
+	font-size: 62.5%; /*10px*/
+	/*
+		1 rem => 16px;
+		12px => 1rem;
+		10px => 1rem
+
+		padding: 24px
+		62.5%
+	*/
+}
+/* Esse código é sobre o zoom da tela do site*/
+
+body {
+	font-family: var(--ff-primary);
+	background: var(--clr-background);
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	min-width: 37rem;
+	padding: 1.6rem;
+}
+
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.8;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+/*Esse código é sobre o tamanho da imagens da galeria*/
+
+
+
+@media screen and (min-width: 625px) {
+	section:nth-child(odd) {
+		padding-top: 5.6rem;
+		padding-bottom: 5.6rem;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	section {
+		padding: 1.6rem calc((100% - 117rem - 1.6rem) / 2);
+	}
+}
+
+
+
+/**********************************/
+/* 2. Navbar 
+<!--navbar-header (Logo de Welcome to Santo; Sandwich - ícone)--> 
+<!--navbar-list (link Home) --> 
+<!--navbar-icons (whatsapp; tiktok; instagram)-->
+/**********************************/
+
+
+.navbar {
+    position: fixed;
+	background: var(--clr-background);
+    width: 100%;
+    padding: 1.6rem;
+    box-shadow: var(--dark-shadow);
+    z-index: 3;
+}
+
+
+.navbar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-header_toggle {
+	background: transparent;
+	border: transparent;
+	font-size: 3.2rem;
+	color: var(--clr-medium-green);
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.navbar-header_toggle:hover {
+	transform: scale(1.2);
+}
+
+.navbar-list {
+	margin-left: auto; /*...*/
+	height: 0;
+	overflow: hidden;
+    transition: var(--transition);
+}
+
+
+.navbar-list a {
+    color: #2196f3;
+    text-decoration: none; /* Remove a decoração de link, se necessário */
+}
+
+
+.navbar-list a:hover {
+    color: #030bfc; /* Altera a cor ao passar o mouse (hover) */
+}
+
+.navbar-list--show-links {
+	height: 4rem;
+}
+
+.navbar-list_link {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 900;
+	padding: 1.6rem;
+	text-transform: capitalize;
+	color: var(--clr-black);
+	transition: var(--transition);
+}
+
+.navbar-list_link:hover {
+    background: var(--clr-medium-green);
+    padding-left: 3.6rem; /* Ajuste o valor conforme necessário */
+}
+
+
+.navbar-icons {
+	display: none;
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-header_toggle {
+		display: none;
+	}
+
+	.navbar-list {
+		height: auto;
+		display: flex;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+	}
+
+
+	.navbar-list_link:hover {
+		background: none;
+		padding-left: 1.6rem;
+		color: var(--clr-medium-green);
+	}
+
+	.navbar-icons {
+		display: flex;
+	}
+
+	.navbar-icons_icon {
+		margin-right: 1.6rem;
+		color: var(--clr-black);
+		font-size: 1.8rem;
+		font-weight: 900;
+		transition: var(--transition);
+	}
+
+	.navbar-icons_icon:hover {
+		color: var(--clr-medium-green);
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.navbar {
+		padding: .8rem calc((100% - 117rem - 1.6rem) / 2);
+	}
+}
+
+/**********************************/
+/* 3. Hero <!--hero (Vídeo)----> 
+/**********************************/
+
+
+.hero_content {
+    flex: 1;
+    position: relative;
+}
+
+.hero_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1050px) {
+	.hero_video {
+	  margin-top: 30px; /* Ajuste essa margem para mover o vídeo para baixo */
+	}
+}
+
+/**********************************/
+/* 4. Main Container
+header-image-title (mote); 
+row; 
+country-name)-->
+Botão
+/**********************************/
+
+
+.main-container *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+  
+.main-container section {
+	position: relative;
+	margin: 0 80px;
+	transition: 0.5s ease;
+}
+  
+.main-container {
+	background: var(--clr-background);
+	position: relative;
+}
+
+.header-image-title {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+  
+.row{
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+	gap: 30px;
+}
+  
+.img-card{
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	width: 450px;
+	max-width: 450px;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+}
+
+.img-card img {
+    width: 100%;
+}
+  
+
+.right-column {
+	max-width: 500px;
+	font-size: large;
+	font-family: 'Poppins', sans-serif;
+}
+  
+.info .city, .info .description p{
+	color: var(--clr-black);
+	margin-bottom: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+  
+.info .city{
+	font-size: 2em;
+	font-family: 'Cairo', sans-serif;
+	font-weight: bold;
+}
+  
+.country{
+	color: rgba(0, 0, 0, 0.1); 
+	font-size: 10em;
+	font-weight: 900;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: var(--box-shadow);
+	font-family: 'Cairo', sans-serif;
+}
+
+.site.oficial {
+	text-decoration: underline;
+}
+ 
+.hero-texto_cta {
+    display: block;
+    font-weight: 600;
+    color: var(--clr-white);
+    width: 20rem;
+    text-align: center;
+    background: var(--clr-medium-green);
+    padding: 2rem; /* Ajuste o valor conforme necessário */
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: var(--transition);
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 25px; /* Ajuste o valor conforme necessário */
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-texto_cta:hover {
+	letter-spacing: .6rem;
+}
+ 
+/**********************************/
+/* 5. Media queris (max-width: 1050px) - Codigos Responsivo 
+<!--main-container 
+(header-image-title; 
+row; 
+country-name)-->
+/**********************************/
+
+@media screen and (max-width: 1050px) {
+	.main-container section {
+	  margin: 20px 20px; /* Reduzindo as margens para telas menores */
+	  margin-top: 40px;
+	}
+  
+	.tab.active {
+	  margin: 0; /* Ajustando margens adicionais */
+	  margin-left: 0; /* Ajustando margens adicionais */
+	}
+  
+	.row {
+	  flex-direction: column;
+	  align-items: center; /* Centralizando os itens na coluna */
+	  margin: 30px 0; /* Espaçamento entre os itens */
+	}
+  
+	.img-card {
+	  width: 80%; /* Ajustando a largura para ocupar uma porcentagem da tela */
+	  max-width: 400px;
+	  margin: 0 auto; /* Centralizando o elemento */
+	  margin-bottom: 20px; /* Adicionando espaço inferior entre os cards */
+	}
+  
+	.country {
+	  font-size: 20vw; /* Reduzindo o tamanho da fonte para dispositivos menores */
+	  text-align: center; /* Centralizando o texto */
+	  margin-bottom: 20px; /* Espaço inferior para separar elementos */
+	}
+  
+	.header-image-title {
+	  margin-left: 0; /* Ajuste da margem para telas menores */
+	  margin-top: 10px;
+	}
+
+	.hero-texto_cta {
+        width: 50%; /* Definir a largura como 100% para ocupar toda a largura da tela */
+        font-size: 18px; /* Reduzir o tamanho da fonte para telas menores */
+        padding: 1.5rem; /* Ajustar o preenchimento conforme necessário */
+        border-radius: 10px; /* Reduzir o raio da borda para uma aparência mais suave */
+    }
+
+    .hero-texto_cta:hover {
+        letter-spacing: 0.3rem; /* Ajustar espaçamento ao passar o mouse para telas menores */
+    }
+}
+
+
+/**********************************/
+/* 6. Galeria
+/**********************************/
+
+.galeria {
+	padding: 0;
+}
+
+.galeria-item {
+	position: relative;
+	min-width: 17rem;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.galeria-item__thumb {
+	transition: var(--transition);
+}
+
+.galeria-item::before {
+	content: "";
+	position: absolute;
+	background: var(--clr-black);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: var(--transition);
+}
+
+.galeria-item__local {
+	position: absolute;
+	font-size: 2.4rem;
+	font-weight: 600;
+	left: 6.4rem;
+	bottom: 3.2rem;
+	color: var(--clr-white);
+	opacity: 0;
+	z-index: 2;
+	transition: var(--transition);
+}
+
+.galeria-item:hover .galeria-item__thumb {
+	transform: scale(1.2);
+}
+
+.galeria-item:hover .galeria-item__local {
+	left: 3.2rem;
+	opacity: 1;
+}
+
+.galeria-item:hover.galeria-item::before {
+	opacity: .7;
+}
+
+@media screen and (min-width: 768px) {
+	.galeria {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.galeria-item {
+		flex: 0 0 50%;
+	}
+	
+}
+
+@media screen and (min-width: 960px) {
+	.galeria-item {
+		flex: 0 0 25%;
+	}
+}
+
+/**********************************/
+/* 7. Footer
+/**********************************/
+
+.footer {
+	background: var(--clr-dark-green);
+	font-size: 1.2rem;
+	font-weight: 900;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 7.2rem 0;
+	margin-top: -5.7rem;
+}
+
+.footer-list, .footer-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer-list_link {
+	color: var(--clr-white);
+	padding: 1.6rem;
+	transition: var(--transition);
+	margin-right: 15px;
+	font-size: large;
+}
+
+.footer-list_link:hover {
+	color: var(--clr-medium-green);
+}
+
+.footer-icons {
+	margin: 3.2rem 0;
+}
+
+.footer-icons_icon {
+	margin-right: 1.6rem;
+	color: var(--clr-black);
+	font-size: 2.8rem;
+	transition: var(--transition);
+}
+
+.footer-icons_icon:hover {
+	color: var(--clr-medium-green);
+}
+
+.date::after {
+	content: "\a";
+	white-space: pre;
+	font-family:-ff-primary;
+}
+
+.copyright {
+	color: var(--clr-white);
+	font-family: "Cairo", sans-serif; 
+}
+
+@media screen and (min-width: 580px) {
+	.footer {
+		font-size: 1.6rem;
+	}
+
+	.date::after {
+		content: "";
+	}
+}
+
+/**********************************/
+/* 8. Modal
+/**********************************/
+
+.modal {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.6);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: var(--clr-white);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem;
+	z-index: 4;
+}
+
+.modal_close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 2.4rem;
+	padding: 1.6rem;
+	cursor: pointer;
+}
+
+.slider {
+	position: relative;
+}
+
+.slider-image_number {
+	position: absolute;
+	background: var(--clr-black);
+	font-size: 1.4rem;
+	padding: .2rem;
+	margin-left: .8rem;
+	margin-top: .8rem;
+}
+
+.slider-buttons {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider-buttons_btn-prev, .slider-buttons_btn-next {
+	font-size: 2.4rem;
+	padding: 1.6rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: var(--transition);
+}
+
+.slider-buttons_btn-prev:hover, .slider-buttons_btn-next:hover {
+	color: var(--clr-medium-green);
+}
+
+.slider-image-description {
+	background: var(--clr-black);
+	text-align: center;
+}
+
+.slider-thumbs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.slider-thumbs__img {
+	position: relative;
+	flex: 0 0 25%;
+	cursor: pointer;
+}
+
+.slider-thumbs__img::before {
+	content: "";
+	position: absolute;
+	background: var(--clr-black);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+}
+
+.slider-thumbs__img:hover.slider-thumbs__img::before {
+	opacity: 0;
+}
+
+.slider-thumbs__img--active.slider-thumbs__img::before {
+	opacity: 0;
+}
+
+@media screen and (min-width: 648px) {
+	.modal {
+		padding: 5.6rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.modal {
+		padding: 1.6rem;
+	}
+
+	.slider-thumbs__img {
+		flex: 1;
+		max-width: 10rem;
+	}
+}

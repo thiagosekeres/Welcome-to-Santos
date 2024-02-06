@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Balsa</title>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+	integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body> <!--header; section main container; sextion galeria; footer, div moldal, Java script-->
+    <header id="home"> <!--home (Cabeçalho e Vídeo introdutório)-->
+        <div class="hero">
+			<nav class="navbar"> <!--navbar-header (Logo de Welcome to Santo; Sandwich - ícone)--> <!--navbar-list (link Home) --> <!--navbar-icons (whatsapp; tiktok; instagram)-->
+				<div class="navbar-header"> <!--navbar-header (Logo de Welcome to Santo; Sandwich - ícone)-->
+					<img src="assets/logo.png" alt="Welcome to Santos" class="navbar-header_logo">
+					<button type="button" class="navbar-header_toggle">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div> <!--navbar-header (Logo de Welcome to Santo; Sandwich - ícone)-->
+				<ul class="navbar-list"> <!--navbar-list (link Home) -->
+					<li>
+						<a href="https://www.welcometosantos.com.br/" class="navbar-list_link">Home</a>
+					</li>
+				</ul> <!--navbar-list (link Home) -->
+				<ul class="navbar-icons"> <!--navbar-icons (whatsapp; tiktok; instagram)-->
+					<li>
+						<a href="https://www.welcometosantos.com.br/atendimento" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-whatsapp"></i> <!--navbar-icons_icon (whatsapp)-->
+						</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@welcome.to.santos?_t=8fgmzc5LZcT&_r=1" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-tiktok"></i> <!--navbar-icons_icon (tiktok)-->
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/welcometosantos/" target="_blank" class="navbar-icons_icon">
+							<i class="fab fa-instagram"></i> <!--navbar-icons_icon (instagram)-->
+						</a>
+					</li>
+				</ul> <!--navbar-icons (whatsapp; tiktok; instagram)-->
+			</nav> <!--navbar--> <!--navbar-header (Logo de Welcome to Santo; Sandwich - ícone)--> <!--navbar-list (link Home) --> <!--navbar-icons (whatsapp; tiktok; instagram)-->
+
+            <div class="hero_content"> <!--hero (Vídeo)---->
+                <video src="assets/Santos 1.mp4" autoplay muted loop class="hero_video"></video>
+            </div> <!--hero (Vídeo)---->
+        </div> <!--hero--> 
+		<!--navbar-header (Logo de Welcome to Santo; Sandwich - ícone)--> 
+		<!--navbar-list (link Home) --> 
+		<!--navbar-icons (whatsapp; tiktok; instagram)--> 
+		<!--hero (Vídeo)---->
+    </header> <!--home (Cabeçalho e Vídeo introdutório)-->
+
+	<section class="main-container" id="main-container"> <!--main-container (header-image; row; country-name)-->
+		<img src="images/Sugestões.png" alt="Mote" class="header-image-title">
+
+		  
+		<div class="tab active"> <!--tab active (row; country-name)-->
+
+			<div class="row"> <!--row (left-column; right-column)-->
+			  	<div class="left-column"> <!-- Imagem -->
+					<div class="img-card">
+				  		<img src="images/Car ferry.png" alt="">
+					</div>
+			  	</div> <!-- Imagem -->
+			  	<div class="right-column"> <!-- Título e texto -->
+					<div class="info">
+				  		<h2 class="city">Travessia de Santos a Guarujá</h2>
+					</div>	
+				  	<div class="description">
+						<p>A travessia de balsa entre Santos e Guarujá revela uma <span class="marcadores">jornada tranquila</span> pelas águas da Baixada Santista. Partindo das praias santistas, a <span class="marcadores">balsa oferece vistas encantadoras do horizonte</span>, com reflexos de sol dançando nas ondas. A chegada ao Guarujá proporciona um encontro com praias deslumbrantes e uma <span class="marcadores">atmosfera relaxante </span>, transformando a travessia em uma breve, mas memorável, experiência costeira.</p>
+					</div>
+				</div> <!-- Título e texto -->
+			</div> <!--row (left-column; right-column)-->
+			
+	
+			<div class="row">
+			  	<div class="left-column">
+					<div class="img-card">
+				  		<img src="images/DH.png" alt="">
+					</div>
+			  	</div>
+			  	<div class="right-column">
+					<div class="info">
+				  		<h2 class="city">Departamento Hidroviário do Estado de São Paulo</h2>
+					</div>	
+				  	<div class="description">
+						<p>O Departamento Hidroviário <span class="marcadores">(DH)</span> de São Paulo, criado em 1966, <span class="marcadores">gerencia as Hidrovias Paulistas</span>. Além disso, o DH administra o Sistema de Travessias de passageiros e veículos, <span class="marcadores">em espcial</span> a travessia de Santos a Guarujá por <span class="marcadores">balsas</span>.</p>
+						<p><span class="local">Departamento Hidroviário:</span> <a class="site oficial" href="https://semil.sp.gov.br/dh/travessias/travessias-automoveis/santos-guaruja/" target="_blank">Site oficial</a></p>
+				  	</div>
+				</div>
+			</div>
+		
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Cidade Amiga.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Cidade Amiga do Ciclista</h2>
+					</div>	
+					<div class="description">
+					  	<p>O Departamento Hidroviário (DH) <span class="marcadores">garante segurança e qualidade</span> nas travessias. Embarcações seguem rigoroso cronograma de manutenção, sendo aprovadas e certificadas. A acessibilidade é prioridade, com balsas gratuitas para ciclistas <span class="marcadores">balsas gratuitas para ciclistas</span> e embarque prioritário para idosos e pessoas com deficiência.</p>
+					  	<p><span class="local">Departamento Hidroviário:</span> <a class="site oficial" href="https://semil.sp.gov.br/dh/travessias/travessias-automoveis/santos-guaruja/" target="_blank">Site oficial</a></p>
+					</div>
+				</div>
+			</div>
+			  
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Tempo.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				  	<div class="info">
+						<h2 class="city">Tempo de Espera</h2>
+					</div>	
+					<div class="description">
+					 	<p><span class="data">Tempo Médio de Espera:</span> Fora do horário de pico, a espera média é de <span class="marcadores">15 minutos</span>.</p>
+					  	<p><span class="local">Variação de Horários:</span> Os horários podem variar devido à demanda e às condições meteorológicas.</p>
+					  	<p><span class="local">Departamento Hidroviário:</span> <a class="site oficial" href="https://semil.sp.gov.br/dh/travessias/travessias-automoveis/santos-guaruja/" target="_blank">Site oficial</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Pagamento.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				 	<div class="info">
+						<h2 class="city">Formas de Pagamento</h2>
+					</div>	
+					<div class="description">
+						<p><span class="data">Formas de Pagamento:</span> A tarifa pode ser paga <span class="marcadores">em dinheiro</span> ou por meio de cobrança automática <span class="marcadores">(Sem Parar, ConectCar, Move Mais, Veloe e Taggy)</span>.</p>
+						<p><span class="local">Restrições de Pagamento:</span> <span class="marcadores">Não são aceitos cartões de crédito/débito</span>, cheques ou boletos para pagamento posterior.</p>
+						<p><span class="local">Departamento Hidroviário:</span> <a class="site oficial" href="https://semil.sp.gov.br/dh/travessias/travessias-automoveis/santos-guaruja/" target="_blank">Site oficial</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left-column">
+				  	<div class="img-card">
+						<img src="images/Tarifas.png" alt="">
+				  	</div>
+				</div>
+				<div class="right-column">
+				 	<div class="info">
+						<h2 class="city">Tarifas e Agendamento</h2>
+					</div>	
+					<div class="description">
+					  	<p>As <span class="marcadores">tarifas</span> variam de acordo com o meio de transporte, sendo diferentes para <span class="marcadores">carros e motos</span>. Além disso, há alterações nos preços durante os dias úteis, aos sábados, domingos e feriados. Para finalizar, agende sua viagem pelo <span class="marcadores">Hora Marcada </span> e <span class="marcadores">garanta rapidez</span> e pontualidade na realização de sua travessia.</p>
+					 	<p><span class="local">Agendamento - Hora Marcada:</span> <a class="site oficial" href="https://horamarcada.dh.sp.gov.br/ViaDigital/" target="_blank">Site oficial</a></p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="country-name">
+				<h1 class="country">Explore</h1>
+			</div>
+				
+
+		</div> <!--tab active (row; country-name)-->
+	</section> <!--main-container (header-image; row; country-name)-->
+
+
+	<section class="galeria" id="galeria"> <!--galeria (Galeria de fotos)-->
+		<article class="galeria-item">
+			<img src="assets/photo_0.png" alt="Rumo a Balsa" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Rumo a Balsa</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_1.png" alt="Curtindo a Viagem em Alto Mar" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Curtindo a Viagem em Alto Mar</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_2.png" alt="Felicidade a Bordo" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Felicidade a Bordo</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_3.png" alt="Vista Privilegiada" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Vista Privilegiada</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_4.png" alt="Reflexões ao Horizonte" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Reflexões ao Horizonte</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_5.png" alt="Transportando Aventuras" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Transportando Aventuras</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_6.png" alt="Pedalando nas Ondas" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Pedalando nas Ondas</h4>
+		</article>
+		
+		<article class="galeria-item">
+			<img src="assets/photo_7.png" alt="Bicicleta à Beira-Mar" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Bicicleta à Beira-Mar</h4>
+		</article>		
+	</section> <!--galeria (Galeria de fotos)-->
+
+	<footer class="footer"> <!--footer (Rodapé da página)-->
+		<ul class="footer-list">
+
+			<li class="footer-list_item">
+				<a href="#home" class="footer-list_link">Início</a>
+			</li>
+
+		</ul> <!--footer-list-->
+
+		<ul class="footer-icons">
+			<li>
+				<a href="https://www.welcometosantos.com.br/atendimento" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-whatsapp"></i>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.tiktok.com/@welcome.to.santos?_t=8fgmzc5LZcT&_r=1" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-tiktok"></i>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/welcometosantos/" target="_blank" class="footer-icons_icon">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+
+		</ul> <!--footer-icons-->
+
+		<p class="copyright">Copyright &copy; Welcome to Santos <span class="date"></span> Todos os direitos reservados.</p>
+
+	</footer>  <!--footer (Rodapé da página)-->
+
+	<div class="modal"> <!--modal (O modal serve para expandir a fotos na tela)-->
+		<div class="modal_close"><i class="fas fa-times"></i></div>
+
+		<div class="modal_content">
+			<div class="slider">
+				<div class="slider_image">
+					<div class="slider-image_number">1 / 6</div>
+					<img src="assets/photo_0.png" class="slider-image_img">
+				</div> <!--slider-image-->
+				<div class="slider-buttons">
+					<div class="slider-buttons_btn-prev">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<div class="slider-buttons_btn-next">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>	<!--slider-button-->
+			</div> <!--slider-->
+			<p class="slider-image-description">Teste de Caption</p>
+			<div class="slider-thumbs">
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_0.png" alt="Unlimited Ocean Front">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_1.png" alt="Piscina de Borda Infinita">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_2.png" alt="Pão de Açucar">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_3.png" alt="Hall Principal da Entrada">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_4.png" alt="Piscina Aquecida Semiolímpica">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_5.png" alt="Piscina Aquecida Infantil">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_6.png" alt="Espaço de Interação e Compartilhamento">
+				</div>
+				<div class="slider-thumbs__img">
+					<img src="assets/photo_7.png" alt="Playground">
+				</div>
+			</div>
+		</div> <!--modal_content-->
+	</div> <!--modal--> <!--modal (O modal serve para expandir a fotos na tela)-->
+	<script src="js/scripts.js"></script>
+</body> <!--header; section main container; sextion galeria; footer, div moldal, Java script-->
+</html>
